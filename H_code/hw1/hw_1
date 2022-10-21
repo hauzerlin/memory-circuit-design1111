@@ -1,0 +1,24 @@
+*** Student id :111521035 ***
+***     Homework 1 (a)    ***
+
+NMOS1 vout1 vin gnd gnd nmos W=   1u L=0.065u
+PMOS1 vout1 vin vdd vdd pmos W= 0.5u L=0.065u
+
+NMOS2 vout2 vin gnd gnd nmos W=   1u L=0.065u
+PMOS2 vout2 vin vdd vdd pmos W=   1u L=0.065u
+
+NMOS3 vout3 vin gnd gnd nmos W=   1u L=0.065u
+PMOS3 vout3 vin vdd vdd pmos W=   2u L=0.065u
+
+vdd vdd gnd DC 1V
+vin vin gnd DC 1V
+
+.OP
+.dc Vin 0V 1V 0.01V
+.option post
+
+.temp 25
+.probe v1(vout1)
+.probe v2(vout2)
+.probe v3(vout3)
+.end
