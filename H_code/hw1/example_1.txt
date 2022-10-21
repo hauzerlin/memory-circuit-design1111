@@ -23,5 +23,6 @@ vin vin gnd DC 1V
 .probe v3(vout3)
 .end
 
+**end**
 
 
