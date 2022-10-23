@@ -1,0 +1,18 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-SP2-2 64-BIT"
+* "format" "HSP"
+* "rundate" "21:26:12 10/23/2022 "
+* "netlist" "hw1_a.txt "
+* "runtitle" "**homework 1 (a)**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ vdd =   1.0000        
++ vin =   1.0000        
++ vout1 =   5.0136u       
++ vout2 =   8.9837u       
++ vout3 =  16.9237u       
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,37 @@
+**Homework 1 (b)**
+** Student ID :111521035 **
+
+.inc "C:/synopsys/65nm_bulk.pm"
+
+**Circuit discribe**
+MN1_b vout1 vin  gnd  gnd nmos W=1u L=0.065u
+MP1_b vout1 vin vdd1 vdd1 pmos W=2u L=0.065u
+
+MN2_b vout2 vin  gnd  gnd nmos W=1u L=0.065u
+MP2_b vout2 vin vdd2 vdd2 pmos W=2u L=0.065u
+
+MN3_b vout3 vin  gnd  gnd nmos W=1u L=0.065u
+MP3_b vout3 vin vdd3 vdd3 pmos W=2u L=0.065u
+
+MN4_b vout4 vin  gnd  gnd nmos W=1u L=0.065u
+MP4_b vout4 vin vdd4 vdd4 pmos W=2u L=0.065u
+
+**Voltage source discribe**
+vdd1 vdd1 gnd DC   1V
+vdd2 vdd2 gnd DC 0.8V
+vdd3 vdd3 gnd DC 0.6V
+vdd4 vdd4 gnd DC 0.4V
+vin vin gnd DC 1V
+
+
+**Output command discribe**
+.OP
+.dc Vin 0V 1V 0.01V
+.option post
+
+.probe v1(vout1)
+.probe v2(vout2)
+.probe v3(vout3)
+.probe v4(vout4)
+
+.end

@@ -1,0 +1,24 @@
+**Homework 1 (d)**
+**Student ID: 111521035**
+
+.inc "C:/synopsys/65nm_bulk.pm"
+
+**Circuit discribe**
+MN_d vout vin gnd gnd nmos W=1u L=0.065u
+MP_d vout vin vdd vdd pmos W=2u L=0.065u
+
+**Voltage source discribe**
+vdd vdd gnd DC 1V
+vin vin gnd DC 1V
+
+.OP
+.dc Vin 0V 1V 0.01V
+.option post
+
+**Output command discribe**
+.probe v1(vout)
+
+**"PAR" is use to declare parameter or expression
+.probe OUT_POWER = PAR('V(vout)*I(vdd)')
+
+.end

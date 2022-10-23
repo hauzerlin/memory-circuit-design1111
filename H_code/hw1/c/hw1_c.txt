@@ -1,0 +1,22 @@
+**Homework 1 (c)**
+** Student ID :111521035 **
+
+.inc "C:/synopsys/65nm_bulk.pm"
+
+**Circuit discribe**
+MN_c vout1 vin gnd gnd nmos W=1u L=0.065u
+MP_c vout1 vin vdd vdd pmos W=2u L=0.065u
+
+**Voltage source discribe**
+vdd vdd gnd DC 1V
+vin vin gnd DC 1V
+
+**Output command & setting**
+.OP
+.dc Vin 0V 1V 0.01V
+.option post
+
+.probe v1(vout1)
+.probe i1(vdd)
+
+.end
