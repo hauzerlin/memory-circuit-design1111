@@ -1,0 +1,18 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-SP2-2 64-BIT"
+* "format" "HSP"
+* "rundate" "15:36:58 11/04/2022 "
+* "netlist" "nor_ac.txt "
+* "runtitle" "**2-to1 nor ac**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ net1 = 999.9666m       
++ vdd =   1.0000        
++ vin_x =   0.            
++ vin_y =   0.            
++ vout1 = 999.9332m       
+***   END: Saved Operating Point ***                     

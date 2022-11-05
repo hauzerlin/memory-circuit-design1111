@@ -1,0 +1,28 @@
+**3-a**
+.inc " C:\synopsys\65nm_bulk.pm"
+
+MN1 vout1 vin gnd gnd nmos W=1u L=0.065u
+MP1 vout1 vin vdd vdd pmos W=0.5u L=0.065u
+
+MN2 vout2 vin gnd gnd nmos W=1u L=0.065u
+MP2 vout2 vin vdd vdd pmos W=1u L=0.065u
+
+MN3 vout3 vin gnd gnd nmos W=1u L=0.065u
+MP3 vout3 vin vdd vdd pmos W=2u L=0.065u
+
+vdd vdd gnd DC 1V
+vin vin gnd DC 1V
+
+.OP
+.dc Vin 0V 1V 0.01V
+.option post
+
+.temp 25
+.probe v1(vout1)
+.probe v2(vout2)
+.probe v3(vout3)
+.end
+
+**end**
+
+
