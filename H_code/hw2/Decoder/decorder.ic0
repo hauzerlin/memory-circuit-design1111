@@ -1,0 +1,44 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-SP2-2 64-BIT"
+* "format" "HSP"
+* "rundate" "22:02:08 11/05/2022 "
+* "netlist" "decorder.sp "
+* "runtitle" "**4 to 1 mux ac**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ en_s0 =   0.            
++ en_s0b = 999.9704m       
++ en_s1 =   0.            
++ en_s1b = 999.9704m       
++ en_s2 =   0.            
++ en_s2b = 999.9703m       
++ vdd =   1.0000        
++ vy0 =   1.2042u       
++ vy1 =   1.3867u       
++ vy2 =   1.3806u       
++ vy3 =  20.8686u       
++ vy4 =   1.3652u       
++ vy5 =   9.2673u       
++ vy6 =   8.3161u       
++ vy7 = 999.8498m       
++ xand0.net1 = 976.2135m       
++ xand0.net2 = 878.0049m       
++ xand1.net1 = 999.9992m       
++ xand1.net2 = 899.3679m       
++ xand2.net1 = 898.7287m       
++ xand2.net2 = 898.7279m       
++ xand3.net1 = 999.9716m       
++ xand3.net2 = 999.9432m       
++ xand4.net1 = 913.9957m       
++ xand4.net2 = 151.1130m       
++ xand5.net1 = 999.9883m       
++ xand5.net2 = 226.8223m       
++ xand6.net1 = 258.4599m       
++ xand6.net2 = 223.3917m       
++ xand7.net1 = 999.9499m       
++ xand7.net2 = 999.8998m       
+***   END: Saved Operating Point ***                     
