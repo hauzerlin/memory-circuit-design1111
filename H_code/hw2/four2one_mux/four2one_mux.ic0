@@ -1,0 +1,37 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-SP2-2 64-BIT"
+* "format" "HSP"
+* "rundate" "21:19:42 11/05/2022 "
+* "netlist" "four2one_mux.sp "
+* "runtitle" "**4 to 1 mux ac**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ en_s0 =   0.            
++ en_s0b = 999.9827m       
++ en_s1 =   0.            
++ en_s1b = 999.9827m       
++ net1 = 250.0009m       
++ net2 = 750.0018m       
++ va = 250.0000m       
++ vb = 500.0000m       
++ vc = 750.0000m       
++ vd =   1.0000        
++ vdd =   1.0000        
++ vout1 = 250.0012m       
++ xain.en = 425.9075m       
++ xain.en_b = 855.4041m       
++ xbin.en = 425.9075m       
++ xbin.en_b = 855.4041m       
++ xcin.en = 425.9075m       
++ xcin.en_b = 855.4041m       
++ xdin.en = 425.9075m       
++ xdin.en_b = 855.4041m       
++ xs1_1.en = 425.9075m       
++ xs1_1.en_b = 855.4041m       
++ xs1_2.en = 425.9075m       
++ xs1_2.en_b = 855.4041m       
+***   END: Saved Operating Point ***                     

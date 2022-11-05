@@ -1,0 +1,18 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-SP2-2 64-BIT"
+* "format" "HSP"
+* "rundate" "20:12:38 11/05/2022 "
+* "netlist" "transmission_gate_dc.sp "
+* "runtitle" "**2-to1 xor dc**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ enable =   1.0000        
++ enable_bar =  20.9163u       
++ vdd =   1.0000        
++ vin_x =   1.0000        
++ vout1 =   1.0000        
+***   END: Saved Operating Point ***                     
