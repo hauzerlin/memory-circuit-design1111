@@ -10,8 +10,8 @@
   lic:  
   lic: FLEXlm: v10.9.8 
   lic: USER:   Dale                 HOSTNAME: DESKTOP-J7D9945 
-  lic: HOSTID: "38d54701ef19 38d54701ef1a 005056c00001 005056c00008" PID:      7
- 928 
+  lic: HOSTID: "38d54701ef19 38d54701ef1a 005056c00001 005056c00008" PID:      4
+ 224 
   lic: Using FLEXlm license file: 
   lic: 27000@DESKTOP-J7D9945 
   lic: Checkout 1 hspice 
@@ -587,7 +587,7 @@
     node    =voltage      node    =voltage      node    =voltage
 
  +0:enable  =   0.      0:enable_b= 999.9833m 0:vdd     =   1.0000 
- +0:vin_x   =   0.      0:vout1   = 594.1779u
+ +0:vin_x   =   0.      0:vout1   = 610.1803u
 
 
           ***** job concluded
@@ -620,19 +620,19 @@
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.00           1           5
-  transient          0.01         251         623         243 rev=        30
+  transient          0.01         251         774         278 rev=        37
   readin             0.01
   errchk             0.01
   setup              0.00
   output             0.00
 
 
-           peak memory used         43.66 megabytes
-           total cpu time            0.04 seconds
-           total elapsed time        0.08 seconds
-           job started at     20:00:43 11/05/2022
-           job ended   at     20:00:44 11/05/2022
+           peak memory used         43.64 megabytes
+           total cpu time            0.03 seconds
+           total elapsed time        0.09 seconds
+           job started at     12:18:42 11/07/2022
+           job ended   at     12:18:42 11/07/2022
 
 
   lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.04(s)
+ lic: total license checkout elapse time:        0.05(s)

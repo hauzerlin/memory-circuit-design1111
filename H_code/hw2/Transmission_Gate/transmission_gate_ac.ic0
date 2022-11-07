@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "J-2014.09-SP2-2 64-BIT"
 * "format" "HSP"
-* "rundate" "20:00:43 11/05/2022 "
+* "rundate" "12:18:42 11/07/2022 "
 * "netlist" "transmission_gate_ac.sp "
 * "runtitle" "**transmission gate ac**"
 * time =    0.            
@@ -14,5 +14,5 @@
 + enable_bar = 999.9833m       
 + vdd =   1.0000        
 + vin_x =   0.            
-+ vout1 = 594.1779u       
++ vout1 = 610.1803u       
 ***   END: Saved Operating Point ***                     
