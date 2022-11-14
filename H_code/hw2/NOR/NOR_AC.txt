@@ -9,11 +9,11 @@ MN_x vout1 vin_x  gnd  gnd nmos W= 1u  L=0.065u
 MN_y vout1 vin_y  gnd  gnd nmos W= 1u  L=0.065u
 
 vdd vdd gnd DC 1V
-vin_x vin_x gnd pulse(0 1  3n 0.5n 0.5n 4n 8n)
-vin_y vin_y gnd pulse(0 1  2n 0.5n 0.5n 1n 4n)
+vin_x vin_x gnd pulse(0 1  19n 0.5n 0.5n 20n 40n)
+vin_y vin_y gnd pulse(0 1  10n 0.5n 0.5n 10n 20n)
 
 .option post
-.tran 0.1ns 10ns
+.tran 0.1ns 50ns
 
 .probe v1(vout1)
 .end

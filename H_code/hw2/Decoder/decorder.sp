@@ -1,4 +1,4 @@
-**4 to 1 mux ac**
+**decorder ac**
 
 .inc "C:\synopsys\65nm_bulk.pm"
 
@@ -20,9 +20,12 @@ Xand7 en_s0  en_s1  en_s2  vy7 vdd gnd and3
 
 $ voltage soure and other setting
 vdd vdd gnd DC 1V
-ven_s0 en_s0 gnd pulse( 0 1    2n 0.5n 0.5n     1n     4n)
-ven_s1 en_s1 gnd pulse( 0 1  3.5n 0.5n 0.5n   3.5n     8n)
-ven_s2 en_s2 gnd pulse( 0 1  7.5n 0.5n 0.5n    30n    30n)
+$ven_s0 en_s0 gnd pulse( 0 1    2n 0.5n 0.5n     1n     4n)
+$ven_s1 en_s1 gnd pulse( 0 1  3.5n 0.5n 0.5n   3.5n     8n)
+$ven_s2 en_s2 gnd pulse( 0 1  7.5n 0.5n 0.5n    30n    30n)
+ven_s0 en_s0 gnd pulse( 0 1    10.5n 0.5n 0.5n     9n     20n)
+ven_s1 en_s1 gnd pulse( 0 1    20n 0.5n 0.5n   19n     40n)
+ven_s2 en_s2 gnd pulse( 0 1    39.5n 0.5n 0.5n    39n    80n)
 $va	  va gnd dc 0v
 $vb	  vb gnd dc 0.5v
 $vc	  vc gnd dc 1v
@@ -52,7 +55,7 @@ $ transmission gate module
 	Xinv en en_b vdd gnd inv
 .ends
 
-.tran 0.1ns 16ns
+.tran 0.1ns 90ns
 .option post
 
 .probe v0(vy0)
@@ -66,3 +69,4 @@ $ transmission gate module
 .end
 
 **end**
+

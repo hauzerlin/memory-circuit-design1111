@@ -1,4 +1,4 @@
-**2-to1 NOR AC**
+**2-to1 XOR AC**
 
 .inc "C:\synopsys\65nm_bulk.pm"
 
@@ -16,8 +16,8 @@ MN_x2 vout1 vin_xb net3 net3 nmos W= 1u  L=0.065u
 MN_y2  net3 vin_yb  gnd  gnd nmos W= 1u  L=0.065u
 
 vdd vdd gnd DC 1V
-vin_x vin_x gnd pulse(0 1 3.5n 0.5n 0.5n 3.5n 8n)
-vin_y vin_y gnd pulse(0 1   2n 0.5n 0.5n   1n 4n)
+vin_x vin_x gnd pulse(0 1 20n 0.5n 0.5n 20n 40n)
+vin_y vin_y gnd pulse(0 1 10n 0.5n 0.5n   10n 20n)
 
 .subckt inv in out vdd GND
 	Mp1 out in vdd vdd pmos w=2.5u l=0.065u
@@ -25,7 +25,7 @@ vin_y vin_y gnd pulse(0 1   2n 0.5n 0.5n   1n 4n)
 .ends
 
 .option post
-.tran 0.1ns 10ns
+.tran 0.1ns 50ns
 
 .probe v1(vout1)
 .end

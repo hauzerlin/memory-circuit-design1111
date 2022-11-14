@@ -10,8 +10,8 @@
   lic:  
   lic: FLEXlm: v10.9.8 
   lic: USER:   Dale                 HOSTNAME: DESKTOP-J7D9945 
-  lic: HOSTID: "38d54701ef19 38d54701ef1a 005056c00001 005056c00008" PID:      8
- 324 
+  lic: HOSTID: "38d54701ef19 38d54701ef1a 005056c00001 005056c00008 047f0e22ff7d
+ " PID:      1284 
   lic: Using FLEXlm license file: 
   lic: 27000@DESKTOP-J7D9945 
   lic: Checkout 1 hspice 
@@ -19,11 +19,11 @@
   lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-J7D9945 
   lic:   
  Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-SP2-2\meta.cfg
-  **warning** (decorder.sp:58) Unrecognized output type for v0 in .print or .probe; The line is ignored.
-  **warning** (decorder.sp:31) Global net name, "gnd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+  **warning** (decorder.sp:61) Unrecognized output type for v0 in .print or .probe; The line is ignored.
+  **warning** (decorder.sp:34) Global net name, "gnd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
 1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
  ******  
- **4 to 1 mux ac**
+ **decorder ac**
 
  ****** circuit name directory
  circuit number to circuit name directory
@@ -42,7 +42,7 @@
        11 xand7.                          and3               1.00 
 1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
  ******  
- **4 to 1 mux ac**
+ **decorder ac**
 
  ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
  Model Name: nmos  
@@ -573,8 +573,7 @@
     KF =      0 
     TRS =      0 
     TRD =      0 
-  **info** (decorder.sp:23) DC voltage reset to initial transient source value              in source        0:ven_s0              new dc=  0.0000D+00
-  **warning** (decorder.sp:25) pulse ven_s2 period too small, reset to   3.1000000E-08
+  **info** (decorder.sp:26) DC voltage reset to initial transient source value              in source        0:ven_s0              new dc=  0.0000D+00
  **warning** (nmos:mn1) Warning:  Acde = 0.297885 may be too small in BSIM4 model with w=1e-006 l=6.5e-008.
 
  **warning** Node specified unrecognized for element     0:vy1              branch; output ignored
@@ -601,7 +600,7 @@
  **info** dc convergence successful at Newton-Raphson method 
 1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
  ******  
- **4 to 1 mux ac**
+ **decorder ac**
 
  ****** operating point information tnom=  25.000 temp=  25.000 ******
  ****** operating point status is voltage   simulation time is     0.     
@@ -623,7 +622,7 @@
           ***** job concluded
 1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
  ******  
- **4 to 1 mux ac**
+ **decorder ac**
 
  ****** job statistics summary tnom=  25.000 temp=  25.000 ******
 
@@ -649,20 +648,20 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.00           1          23
-  transient          0.06         161         535         160 rev=         9
-  readin             0.00
-  errchk             0.02
+  op point           0.01           1          23
+  transient          0.09         901         842         251 rev=        15
+  readin             0.02
+  errchk             0.01
   setup              0.00
   output             0.00
 
 
-           peak memory used         44.62 megabytes
-           total cpu time            0.08 seconds
-           total elapsed time        0.13 seconds
-           job started at     22:02:08 11/05/2022
-           job ended   at     22:02:08 11/05/2022
+           peak memory used         44.68 megabytes
+           total cpu time            0.12 seconds
+           total elapsed time        0.17 seconds
+           job started at     16:32:51 11/14/2022
+           job ended   at     16:32:51 11/14/2022
 
 
   lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.03(s)
+ lic: total license checkout elapse time:        0.04(s)

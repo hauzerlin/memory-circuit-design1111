@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "J-2014.09-SP2-2 64-BIT"
 * "format" "HSP"
-* "rundate" "15:36:58 11/04/2022 "
+* "rundate" "12:19:08 11/14/2022 "
 * "netlist" "nor_ac.txt "
 * "runtitle" "**2-to1 nor ac**"
 * time =    0.            

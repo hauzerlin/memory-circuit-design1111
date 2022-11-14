@@ -1,22 +1,18 @@
 * "simulator" "HSPICE" 
 * "version" "J-2014.09-SP2-2 64-BIT"
 * "format" "HSP"
-* "rundate" "14:15:49 11/14/2022 "
-* "netlist" "xor_ac.sp "
-* "runtitle" "**2-to1 xor ac**"
+* "rundate" "12:11:11 11/14/2022 "
+* "netlist" "nand2to1_ac.sp "
+* "runtitle" "**2-to-1 nand ac**"
 * time =    0.            
 * temperature =   25.0000        
 *** BEGIN: Saved Operating Point ***                     
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ net1 = 119.0320m       
-+ net2 =  27.0997u       
-+ net3 =  28.2322u       
++ net1 =  99.6584m       
 + vdd =   1.0000        
 + vin_x =   0.            
-+ vin_xb = 999.9801m       
 + vin_y =   0.            
-+ vin_yb = 999.9801m       
-+ vout1 =  54.2187u       
++ vout1 = 999.9991m       
 ***   END: Saved Operating Point ***                     

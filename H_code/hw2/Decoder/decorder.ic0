@@ -1,9 +1,9 @@
 * "simulator" "HSPICE" 
 * "version" "J-2014.09-SP2-2 64-BIT"
 * "format" "HSP"
-* "rundate" "22:02:08 11/05/2022 "
+* "rundate" "16:32:51 11/14/2022 "
 * "netlist" "decorder.sp "
-* "runtitle" "**4 to 1 mux ac**"
+* "runtitle" "**decorder ac**"
 * time =    0.            
 * temperature =   25.0000        
 *** BEGIN: Saved Operating Point ***                     

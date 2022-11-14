@@ -10,8 +10,8 @@
   lic:  
   lic: FLEXlm: v10.9.8 
   lic: USER:   Dale                 HOSTNAME: DESKTOP-J7D9945 
-  lic: HOSTID: "38d54701ef19 38d54701ef1a 005056c00001 005056c00008" PID:      1
- 9920 
+  lic: HOSTID: "38d54701ef19 38d54701ef1a 005056c00001 005056c00008 047f0e22ff7d
+ " PID:      6840 
   lic: Using FLEXlm license file: 
   lic: 27000@DESKTOP-J7D9945 
   lic: Checkout 1 hspice 
@@ -22,7 +22,7 @@
   **warning** (xor_ac.sp:22) Global net name, "gnd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
 1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
  ******  
- **2-to1 nor ac**
+ **2-to1 xor ac**
 
  ****** circuit name directory
  circuit number to circuit name directory
@@ -32,7 +32,7 @@
         2 xinv_y.                         inv                1.00 
 1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
  ******  
- **2-to1 nor ac**
+ **2-to1 xor ac**
 
  ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
  Model Name: nmos  
@@ -581,7 +581,7 @@
  **info** dc convergence successful at Newton-Raphson method 
 1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
  ******  
- **2-to1 nor ac**
+ **2-to1 xor ac**
 
  ****** operating point information tnom=  25.000 temp=  25.000 ******
  ****** operating point status is voltage   simulation time is     0.     
@@ -595,7 +595,7 @@
           ***** job concluded
 1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
  ******  
- **2-to1 nor ac**
+ **2-to1 xor ac**
 
  ****** job statistics summary tnom=  25.000 temp=  25.000 ******
 
@@ -621,20 +621,20 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.00           1          10
-  transient          0.01         101         322         101 rev=         6
-  readin             0.01
-  errchk             0.00
+  op point           0.01           1          10
+  transient          0.02         501         419         132 rev=         8
+  readin             0.02
+  errchk             0.01
   setup              0.00
   output             0.00
 
 
-           peak memory used         43.64 megabytes
-           total cpu time            0.03 seconds
-           total elapsed time        0.07 seconds
-           job started at     18:54:44 11/05/2022
-           job ended   at     18:54:44 11/05/2022
+           peak memory used         43.66 megabytes
+           total cpu time            0.05 seconds
+           total elapsed time        0.10 seconds
+           job started at     14:15:49 11/14/2022
+           job ended   at     14:15:49 11/14/2022
 
 
   lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.03(s)
+ lic: total license checkout elapse time:        0.04(s)
