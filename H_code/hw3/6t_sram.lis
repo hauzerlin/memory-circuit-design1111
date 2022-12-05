@@ -1,0 +1,886 @@
+ ****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
+  Copyright (C) 2014 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: 6t_sram.sp                                                        
+  Command line options: -i 6t_sram.sp -o 6t_sram.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   Dale                 HOSTNAME: DESKTOP-J7D9945 
+  lic: HOSTID: "38d54701ef19 38d54701ef1a 005056c00001 005056c00008 047f0e22ff7d
+ " PID:      31868 
+  lic: Using FLEXlm license file: 
+  lic: 27000@DESKTOP-J7D9945 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2023/2019.2019 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-J7D9945 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_J-2014.09-SP2-2\meta.cfg
+1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
+ ******  
+ **sram 6t dc**
+
+ ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
+ Model Name: nmos  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 1.85e-009 
+    TOXE = 1.85e-009 
+    TOXP = 1.2e-009 
+    TOXM = 1.85e-009 
+    DTOX = 6.5e-010 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    1.9 
+    XJ = 1.96e-008 
+    VSAT = 1.243e+005 
+    A0 =      1 
+    AGS = 1e-020 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+004 
+    KETA =   0.04 
+    NSUB = 6e+016 
+    NDEP = 2.54e+018 
+    NSD = 2e+020 
+    NGATE = 2e+020 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-007 
+    K1 =    0.4 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =   0.01 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 = 1e-009 
+    DVTP1 =    0.1 
+    W0 = 2.5e-006 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 = -0.032 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =    0.5 
+    DSUB =    0.1 
+    VTH0 =  0.423 
+    EU =   1.67 
+    UA = 6e-010 
+    UA1 = 4.31e-009 
+    UB = 1.2e-018 
+    UB1 = 7.61e-018 
+    UC =      0 
+    UC1 = -5.6e-011 
+    U0 = 0.0491 
+    UTE =   -1.5 
+    VOFF =  -0.13 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.08 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+006 
+    DELTA =   0.01 
+    RDSW =    165 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     85 
+    RSW =     85 
+    PRWG =      0 
+    PRWB = 6.8e-011 
+    PRT =      0 
+    ETA0 = 0.0058 
+    ETAB =      0 
+    PCLM =   0.04 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = -0.005 
+    PSCBE1 = 8.14e+008 
+    PSCBE2 = 1e-007 
+    PVAG = 1e-020 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -3e-008 
+    XLREF = -3e-008 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+009 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC =  0.012 
+    BIGC = 0.0028 
+    CIGC =  0.002 
+    AIGSD =  0.012 
+    BIGSD = 0.0028 
+    CIGSD =  0.002 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =  0.001 
+    IJTHSREV =  0.001 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =  -0.55 
+    GBMIN = 1e-010 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 2.653e-010 
+    CGDL = 2.653e-010 
+    CKAPPAS =   0.03 
+    CKAPPAD =   0.03 
+    CF = 1.183e-010 
+    CLC = 1e-007 
+    CLE =    0.6 
+    DWC = 5e-009 
+    DLC = 5.25e-009 
+    DLCIG = 5.25e-009 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =    0.9 
+    VOFFCV =   0.02 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =  0.001 
+    TPB =  0.005 
+    TCJSW =  0.001 
+    TPBSW =  0.005 
+    TCJSWG =  0.001 
+    TPBSWG =  0.005 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL = 2e-006 
+    SW = 2e-006 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 1.5e-010 
+    CGDO = 1.5e-010 
+    CGBO = 2.56e-011 
+    XPART =      0 
+    RSH =      5 
+    JSS = 0.0001 
+    JSWS = 1e-011 
+    JSWGS = 1e-010 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS = 5e-010 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS = 3e-010 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD = 1e-011 
+    JSWGD = 1e-010 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD = 5e-010 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD = 5e-010 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 5.25e-009 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = 5e-009 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+041 
+    NOIB = 3.125e+026 
+    NOIC = 8.75e+009 
+    EM = 4.1e+007 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ Model Name: pmos  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 1.95e-009 
+    TOXE = 1.95e-009 
+    TOXP = 1.2e-009 
+    TOXM = 1.95e-009 
+    DTOX = 7.5e-010 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    1.9 
+    XJ = 1.96e-008 
+    VSAT = 7e+004 
+    A0 =      1 
+    AGS = 1e-020 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+004 
+    KETA = -0.047 
+    NSUB = 6e+016 
+    NDEP = 1.87e+018 
+    NSD = 2e+020 
+    NGATE = 2e+020 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-007 
+    K1 =    0.4 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =  -0.01 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 = 1e-009 
+    DVTP1 =   0.05 
+    W0 = 2.5e-006 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 = -0.032 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =   0.56 
+    DSUB =    0.1 
+    VTH0 = -0.365 
+    EU =      1 
+    UA = 2e-009 
+    UA1 = 4.31e-009 
+    UB = 5e-019 
+    UB1 = 7.61e-018 
+    UC =      0 
+    UC1 = -5.6e-011 
+    U0 = 0.00574 
+    UTE =   -1.5 
+    VOFF = -0.126 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.08 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+006 
+    DELTA =   0.01 
+    RDSW =    165 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     85 
+    RSW =     85 
+    PRWG = 3.22e-008 
+    PRWB = 6.8e-011 
+    PRT =      0 
+    ETA0 = 0.0058 
+    ETAB =      0 
+    PCLM =   0.12 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = 3.4e-008 
+    PSCBE1 = 8.14e+008 
+    PSCBE2 = 9.58e-007 
+    PVAG = 1e-020 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -3e-008 
+    XLREF = -3e-008 
+    B0 = -1e-020 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+009 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC =   0.69 
+    BIGC = 0.0012 
+    CIGC = 0.0008 
+    AIGSD = 0.0087 
+    BIGSD = 0.0012 
+    CIGSD = 0.0008 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =  0.001 
+    IJTHSREV =  0.001 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =   0.55 
+    GBMIN = 1e-010 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 2.653e-010 
+    CGDL = 2.653e-010 
+    CKAPPAS =   0.03 
+    CKAPPAD =   0.03 
+    CF = 1.171e-010 
+    CLC = 1e-007 
+    CLE =    0.6 
+    DWC = 5e-009 
+    DLC = 5.25e-009 
+    DLCIG = 5.25e-009 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =    0.9 
+    VOFFCV =   0.02 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =  0.001 
+    TPB =  0.005 
+    TCJSW =  0.001 
+    TPBSW =  0.005 
+    TCJSWG =  0.001 
+    TPBSWG =  0.005 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL = 2e-006 
+    SW = 2e-006 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 1.5e-010 
+    CGDO = 1.5e-010 
+    CGBO = 2.56e-011 
+    XPART =      0 
+    RSH =      5 
+    JSS = 0.0001 
+    JSWS = 1e-011 
+    JSWGS = 1e-010 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS = 5e-010 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS = 3e-010 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD = 1e-011 
+    JSWGD = 1e-010 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD = 5e-010 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD = 5e-010 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 5.25e-009 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = 5e-009 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.188e+040 
+    NOIB = 1.5e+025 
+    NOIC = 8.75e+009 
+    EM = 4.1e+007 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ **warning** (nmos:mn2) Warning:  Acde = 0.297885 may be too small in BSIM4 model with w=1e-005 l=6.5e-008.
+
+ **warning** Node specified unrecognized for element     0:v1               branch; output ignored
+
+
+ **warning** Node specified unrecognized for element     0:v2               branch; output ignored
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+ ******  
+ **sram 6t dc**
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+x
+
+        volt    voltage    
+                    v1     
+    0.          999.7488m  
+   10.00000m    999.6893m  
+   20.00000m    999.6121m  
+   30.00000m    999.5120m  
+   40.00000m    999.3823m  
+   50.00000m    999.2147m  
+   60.00000m    998.9986m  
+   70.00000m    998.7206m  
+   80.00000m    998.3638m  
+   90.00000m    997.9069m  
+  100.00000m    997.3236m  
+  110.00000m    996.5811m  
+  120.00000m    995.6388m  
+  130.00000m    994.4470m  
+  140.00000m    992.9453m  
+  150.00000m    991.0601m  
+  160.00000m    988.7032m  
+  170.00000m    985.7694m  
+  180.00000m    982.1335m  
+  190.00000m    977.6485m  
+  200.00000m    972.1427m  
+  210.00000m    965.4164m  
+  220.00000m    957.2392m  
+  230.00000m    947.3460m  
+  240.00000m    935.4299m  
+  250.00000m    921.1400m  
+  260.00000m    904.0607m  
+  270.00000m    883.6945m  
+  280.00000m    859.4248m  
+  290.00000m    830.4544m  
+  300.00000m    795.7125m  
+  310.00000m    753.8184m  
+  320.00000m    704.0023m  
+  330.00000m    651.3298m  
+  340.00000m    608.3929m  
+  350.00000m    578.2218m  
+  360.00000m    556.0562m  
+  370.00000m    538.3495m  
+  380.00000m    523.2513m  
+  390.00000m    509.7762m  
+  400.00000m    497.3584m  
+  410.00000m    485.6543m  
+  420.00000m    474.4376m  
+  430.00000m    463.5571m  
+  440.00000m    452.9078m  
+  450.00000m    442.4151m  
+  460.00000m    432.0259m  
+  470.00000m    421.7021m  
+  480.00000m    411.4173m  
+  490.00000m    401.1534m  
+  500.00000m    390.8994m  
+  510.00000m    380.6494m  
+  520.00000m    370.4017m  
+  530.00000m    360.1585m  
+  540.00000m    349.9247m  
+  550.00000m    339.7078m  
+  560.00000m    329.5180m  
+  570.00000m    319.3676m  
+  580.00000m    309.2712m  
+  590.00000m    299.2462m  
+  600.00000m    289.3130m  
+  610.00000m    279.4956m  
+  620.00000m    269.8222m  
+  630.00000m    260.3264m  
+  640.00000m    251.0478m  
+  650.00000m    242.0326m  
+  660.00000m    233.3335m  
+  670.00000m    225.0079m  
+  680.00000m    217.1142m  
+  690.00000m    209.7058m  
+  700.00000m    202.8240m  
+  710.00000m    196.4908m  
+  720.00000m    190.7065m  
+  730.00000m    185.4511m  
+  740.00000m    180.6890m  
+  750.00000m    176.3760m  
+  760.00000m    172.4652m  
+  770.00000m    168.9103m  
+  780.00000m    165.6689m  
+  790.00000m    162.7032m  
+  800.00000m    159.9800m  
+  810.00000m    157.4706m  
+  820.00000m    155.1505m  
+  830.00000m    152.9984m  
+  840.00000m    150.9963m  
+  850.00000m    149.1283m  
+  860.00000m    147.3810m  
+  870.00000m    145.7426m  
+  880.00000m    144.2030m  
+  890.00000m    142.7530m  
+  900.00000m    141.3849m  
+  910.00000m    140.0917m  
+  920.00000m    138.8672m  
+  930.00000m    137.7060m  
+  940.00000m    136.6032m  
+  950.00000m    135.5544m  
+  960.00000m    134.5556m  
+  970.00000m    133.6034m  
+  980.00000m    132.6944m  
+  990.00000m    131.8259m  
+    1.00000     130.9951m  
+y
+x
+
+        volt    voltage    
+                    v2     
+    0.            0.       
+   10.00000m     10.0000m  
+   20.00000m     20.0000m  
+   30.00000m     30.0000m  
+   40.00000m     40.0000m  
+   50.00000m     50.0000m  
+   60.00000m     60.0000m  
+   70.00000m     70.0000m  
+   80.00000m     80.0000m  
+   90.00000m     90.0000m  
+  100.00000m    100.0000m  
+  110.00000m    110.0000m  
+  120.00000m    120.0000m  
+  130.00000m    130.0000m  
+  140.00000m    140.0000m  
+  150.00000m    150.0000m  
+  160.00000m    160.0000m  
+  170.00000m    170.0000m  
+  180.00000m    180.0000m  
+  190.00000m    190.0000m  
+  200.00000m    200.0000m  
+  210.00000m    210.0000m  
+  220.00000m    220.0000m  
+  230.00000m    230.0000m  
+  240.00000m    240.0000m  
+  250.00000m    250.0000m  
+  260.00000m    260.0000m  
+  270.00000m    270.0000m  
+  280.00000m    280.0000m  
+  290.00000m    290.0000m  
+  300.00000m    300.0000m  
+  310.00000m    310.0000m  
+  320.00000m    320.0000m  
+  330.00000m    330.0000m  
+  340.00000m    340.0000m  
+  350.00000m    350.0000m  
+  360.00000m    360.0000m  
+  370.00000m    370.0000m  
+  380.00000m    380.0000m  
+  390.00000m    390.0000m  
+  400.00000m    400.0000m  
+  410.00000m    410.0000m  
+  420.00000m    420.0000m  
+  430.00000m    430.0000m  
+  440.00000m    440.0000m  
+  450.00000m    450.0000m  
+  460.00000m    460.0000m  
+  470.00000m    470.0000m  
+  480.00000m    480.0000m  
+  490.00000m    490.0000m  
+  500.00000m    500.0000m  
+  510.00000m    510.0000m  
+  520.00000m    520.0000m  
+  530.00000m    530.0000m  
+  540.00000m    540.0000m  
+  550.00000m    550.0000m  
+  560.00000m    560.0000m  
+  570.00000m    570.0000m  
+  580.00000m    580.0000m  
+  590.00000m    590.0000m  
+  600.00000m    600.0000m  
+  610.00000m    610.0000m  
+  620.00000m    620.0000m  
+  630.00000m    630.0000m  
+  640.00000m    640.0000m  
+  650.00000m    650.0000m  
+  660.00000m    660.0000m  
+  670.00000m    670.0000m  
+  680.00000m    680.0000m  
+  690.00000m    690.0000m  
+  700.00000m    700.0000m  
+  710.00000m    710.0000m  
+  720.00000m    720.0000m  
+  730.00000m    730.0000m  
+  740.00000m    740.0000m  
+  750.00000m    750.0000m  
+  760.00000m    760.0000m  
+  770.00000m    770.0000m  
+  780.00000m    780.0000m  
+  790.00000m    790.0000m  
+  800.00000m    800.0000m  
+  810.00000m    810.0000m  
+  820.00000m    820.0000m  
+  830.00000m    830.0000m  
+  840.00000m    840.0000m  
+  850.00000m    850.0000m  
+  860.00000m    860.0000m  
+  870.00000m    870.0000m  
+  880.00000m    880.0000m  
+  890.00000m    890.0000m  
+  900.00000m    900.0000m  
+  910.00000m    910.0000m  
+  920.00000m    920.0000m  
+  930.00000m    930.0000m  
+  940.00000m    940.0000m  
+  950.00000m    950.0000m  
+  960.00000m    960.0000m  
+  970.00000m    970.0000m  
+  980.00000m    980.0000m  
+  990.00000m    990.0000m  
+    1.00000       1.0000   
+y
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
+ ******  
+ **sram 6t dc**
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:v1      = 130.9951m 0:v2      =   1.0000  0:vdd     =   1.0000 
+
+
+ **** voltage sources
+
+ subckt                        
+ element  0:v2       0:vdd     
+  volts      1.0000     1.0000 
+  current  -11.0195u   -4.3674m
+  power     11.0195u    4.3674m
+
+     total voltage source power dissipation=    4.3784m       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:mp1      0:mn2      0:mp3      0:mn4      0:mn5      0:mn6     
+ model    0:pmos     0:nmos     0:pmos     0:nmos     0:nmos     0:nmos    
+ region       Linear     Cutoff     Cutoff     Linear     Cutoff   Saturati
+  id         0.        10.9312u  -38.0221n    4.3675m    0.         4.3674m
+  ibs     -6.323e-26  2.716e-24 -8.294e-25  4.562e-24   -1.0005p -131.4667f
+  ibd     -8.730e-26   -1.0100p  879.0049f -140.9340f   -1.0100p   -1.0100p
+  vgs     -869.0049m  130.9951m    0.         1.0000     0.       869.0049m
+  vds        0.         1.0000  -869.0049m  130.9951m    0.       869.0049m
+  vbs        0.         0.         0.         0.        -1.0000  -130.9951m
+  vth     -365.0726m  310.5774m -244.0476m  409.5306m  603.2878m  353.1249m
+  vdsat   -389.9762m   38.6552m  -45.7149m  295.6131m   39.5440m  263.9509m
+  vod     -503.9323m -179.5823m  244.0476m  590.4694m -603.2878m  515.8800m
+  beta       4.6511m  356.3088m    5.8306m  243.3035m  151.7876m  161.6992m
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m
+  gm         0.       252.1358u  970.8151n    3.1677m    0.         8.7451m
+  gds        1.9181m   30.9136u  148.7468n   26.8029m  866.1039p    1.3966m
+  gmb        0.        60.3120u  221.0488n    1.0364m    0.         2.0376m
+  cdtot      3.1593f    6.9625f    1.4058f   11.8069f    5.0148f    4.9088f
+  cgtot      3.2770f    9.0170f    1.7068f   15.9243f    5.7683f    8.8669f
+  cstot      2.8342f   12.8200f    2.4681f   15.8616f    6.4462f    9.5711f
+  cbtot      2.8285f   13.1539f    2.6528f   13.8110f    6.7131f    7.5223f
+  cgs        1.8557f    4.8397f  871.3249a   10.4098f    2.6291f    6.4821f
+  cgd        1.4178f    2.9858f  592.6236a    5.5179f    2.6291f    2.3305f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- J-2014.09-SP2-2 64-BIT (Apr 17 2015) win64 ******             
+ ******  
+ **sram 6t dc**
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      28 # elements   =       8
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           8
+  dc sweep           0.00         101         225
+  readin             0.01
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         43.60 megabytes
+           total cpu time            0.02 seconds
+           total elapsed time        0.06 seconds
+           job started at     22:16:56 12/05/2022
+           job ended   at     22:16:57 12/05/2022
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)
