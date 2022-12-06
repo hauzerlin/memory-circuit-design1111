@@ -1,16 +1,17 @@
 * "simulator" "HSPICE" 
 * "version" "J-2014.09-SP2-2 64-BIT"
 * "format" "HSP"
-* "rundate" "14:08:55 12/06/2022 "
-* "netlist" "6t_sram.sp "
-* "runtitle" "**sram 6t dc**"
+* "rundate" "17:29:01 12/06/2022 "
+* "netlist" "8t_sram_1v_dc.sp "
+* "runtitle" "**sram 8t dc 1v**"
 * time =    0.            
 * temperature =   25.0000        
 *** BEGIN: Saved Operating Point ***                     
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ v1 = 130.9951m       
-+ v2 =   1.0000        
-+ vdd =   1.0000        
++ v1 =  12.2146u       
++ v2 = 400.0000m       
++ vdd = 400.0000m       
++ vout =  44.6903m       
 ***   END: Saved Operating Point ***                     
