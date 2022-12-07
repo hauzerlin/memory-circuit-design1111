@@ -47,7 +47,8 @@ for i = 1:length(list_y)
     end
 end
 
-fprintf("right square diagonal length : %d\n",save_length(max_x,max_y));
+fprintf("square diagonal length : %d\n",save_length(max_x,max_y));
+
 
 plot([x1(max_x),x2(max_y)],[y1(max_x),y2(max_y)],'g',LineWidth=3.0)
 
@@ -88,7 +89,7 @@ for i = 1:length(list_y_left)
     end
 end
 
-fprintf("left square diagonal length : %d\n",save_length_left(max_x_left,max_y_left));
+% fprintf("left square diagonal length : %d\n",save_length_left(max_x_left,max_y_left));
 
 
 plot([x2(max_x_left),x1(max_y_left)],[y2(max_x_left),y1(max_y_left)],'g',LineWidth=3.0)
@@ -100,5 +101,7 @@ plot([x2(max_x_left),x1(max_y_left)],[y2(max_x_left),y2(max_x_left)],'g',LineWid
 
 
 
+ fprintf("lagrest square area: %d\n",(save_length(max_x,max_y)/sqrt(2))^2 );
+ fprintf("SNM = %d\n", 4*(save_length(max_x,max_y)/sqrt(2)));
 
 end

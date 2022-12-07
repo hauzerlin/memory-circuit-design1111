@@ -45,7 +45,8 @@ for i = 1:length(list_y)
 end
 
 fprintf("square diagonal length : %d\n",save_length(max_x,max_y));
-
+ fprintf("lagrest square area: %d\n",(save_length(max_x,max_y)/sqrt(2))^2 );
+ fprintf("WNM = %d\n", 4*(save_length(max_x,max_y)/sqrt(2)));
 
 plot([x1(max_x),x2(max_y)],[y1(max_x),y2(max_y)],'g',LineWidth=3.0)
 

@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-SP2-2 64-BIT"
+* "format" "HSP"
+* "rundate" "19:01:55 12/06/2022 "
+* "netlist" "test.sp "
+* "runtitle" "**6tsram**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ bl =   0.            
++ blb = 800.0000m       
++ q = 318.5649m       
++ qb = 318.5513m       
++ vdd = 800.0000m       
++ wl =   0.            
+***   END: Saved Operating Point ***                     

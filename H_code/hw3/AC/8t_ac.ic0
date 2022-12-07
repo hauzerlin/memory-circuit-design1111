@@ -1,0 +1,22 @@
+* "simulator" "HSPICE" 
+* "version" "J-2014.09-SP2-2 64-BIT"
+* "format" "HSP"
+* "rundate" "22:28:45 12/06/2022 "
+* "netlist" "8t_ac.sp "
+* "runtitle" "**sram 8t dc 1v**"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ bl =   0.            
++ blb = 800.0000m       
++ node =   4.6131f       
++ q = 800.0000m       
++ qb = 694.2083p       
++ rdbl =   4.6131f       
++ rdwl =   4.6131f       
++ vdd = 800.0000m       
++ wl =   0.            
+***   END: Saved Operating Point ***                     
